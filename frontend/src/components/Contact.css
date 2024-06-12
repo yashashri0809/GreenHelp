@@ -1,0 +1,212 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666666;
+    background: #ffffff;
+  } */
+  
+  /* Wrapper styles */
+  .wrapper-con {
+    margin: 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2%;
+  }
+  
+  /* Container styles */
+  .container-con {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    display: flex;
+    background: #ffffff;
+    /* box-shadow: 0 0 5px #999999; */
+  }
+  
+  /* Left column styles */
+  .col-left1-con,
+  .col-right-con {
+    padding: 30px;
+  }
+  
+  .col-left1-con {
+    width: 40%;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    background: #006747;
+  }
+  
+  /* Right column styles */
+  .col-right-con {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 767px) {
+    .container-con {
+      flex-direction: column;
+      box-shadow: none;
+    }
+    .col-left1-con,
+    .col-right-con {
+      width: 100%;
+      margin: 0;
+      clip-path: none;
+    }
+    .col-right-con {
+      padding: 30px;
+      margin-bottom: 90px;
+    }
+    .col-left1-con {
+      width: 100%;
+      clip-path: none;
+      background: #2aa15f;
+    }
+    .col-right-con {
+      width: 100%;
+      margin-left: 0px;
+      margin-right: auto;
+      padding: 0px;
+      padding-top: 30px;
+    }
+  }
+  
+  /* Text styles */
+  .login-text-con {
+    position: relative;
+    width: 50%;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .login-text-con h2 {
+    margin: 0 0 15px 0;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .login-text-con p {
+    margin: 10px 10px 0px 0px;
+    font-size: 15px;
+    font-weight: 300px;
+    line-height: 24px;
+    font-style: italic;
+    color: #ffffff;
+    padding-right: 30px;
+  }
+  
+  /* Form styles */
+  .login-form-con {
+    width: 100%;
+    max-width: 700px; /* Set a maximum width if necessary */
+    margin: 0 auto;
+    padding: 0 30px; /* Add padding if needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .login-form-con h2 {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .login-form-con label {
+    display: block;
+    width: 100%;
+    margin-bottom: 1px;
+    letter-spacing: .5px;
+  }
+  
+  .login-form-con input:focus,
+  .login-form-con textarea:focus,
+  .login-form-con select:focus {
+    border-color: #3ad732;
+  }
+  
+
+  .input {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #2aa15f;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #2aa15f;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 0 #2aa15f;
+    transition: 0.3s;
+  }
+  
+  .btn-con {
+    background-color: transparent;
+    color: #2aa15f;
+  }
+  
+  .btn-con:hover {
+    background-color: #2aa15f;
+    color: #ffffff;
+    transform: scale(1.02);
+  }
+  
+  .login-form-con button:hover,
+  .login-form-con input[type="submit"]:hover {
+    color: #ffffff;
+    box-shadow: inset 400px 0 0 0 #2aa15f;
+  }
+  
+  /* Dropdown and textarea styles */
+  .form-group-con select {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+    outline: none;
+    border: 1px solid #b5b3b3;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(151, 151, 151); /* Change the color to your desired color */
+  }
+  
+  .form-group-con select option {
+    color: rgb(67, 67, 67); /* Change the color to your desired color */
+  }
+  
+  .form-group-con select:focus {
+    color: rgb(41, 41, 41); /* Change the color of the outer box to red when focused */
+  }
+  
+  .form-group-con textarea {
+    width: 100%;
+    height: 90px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    outline: none;
+  }
+  
+  .form-group-con textarea:focus {
+    border-color: #3ad732;
+  }
+  
